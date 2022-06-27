@@ -1,0 +1,108 @@
+ Positioned(
+              bottom: 40,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    Text(
+                      "Search and choose your",
+                      style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "favorite Pancakes",
+                      style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "Discover the best Pancakes from",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "over 1,599 restaurants",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    
+                    TextButton(
+                      style: ButtonStyle(
+                          shape: MaterialStateProperty.all(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.horizontal(
+                                left: Radius.circular(10),
+                                right: Radius.circular(10),
+                              ),
+                            ),
+                          ),
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.white),
+                          padding: MaterialStateProperty.all(
+                              EdgeInsets.symmetric(
+                                  horizontal: 100, vertical: 10))),
+                      onPressed: () {},
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(color: Colors.black, fontSize: 22),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color.fromARGB(255, 255, 255, 255)),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Container(
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color.fromRGBO(205, 205, 205, 1)),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Container(
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color.fromRGBO(205, 205, 205, 1)),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
